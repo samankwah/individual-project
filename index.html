@@ -10,6 +10,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./script.js" />
+    <link rel="stylesheet" href="./css/swipper.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav id="navbar">
@@ -49,6 +54,20 @@
       </div>
     </nav>
     <section id="hero">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/hero.jpg" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slide2.jpg" alt="img" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/slide3.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div id="hero-overlay">
         <header>
           <div class="container">
@@ -58,8 +77,9 @@
               EVENTS AND MORE!
             </h1>
             <p>
-              We are lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
-              Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui
+              We are lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean tellus <br />
+              sem, mattis in pre-tium nec, fermentum viverra dui
             </p>
 
             <button>Get Started Now</button>
@@ -88,42 +108,8 @@
         </div>
       </div>
     </section>
-    <!-- <section id="program">
-      <div id="prog-overlay">
-        <h2>PROGRAMS WE OFFER</h2>
-        <p>
-          Maecenas felis felis, vulputate sit amet mauris et, semper aliquam
-          ligula. Integer efficitur tellus metus, sed feugiat leo posuere ac.
-          Morbi vitae tincidunt mi, et malesuada massa.
-        </p>
-      </div>
+    <section id="programs" class="programs-section">
       <div class="program-container">
-        <div class="card">
-          <div class="prog-container-image">
-            <img src="./assets/images/blog1.jpg.webp" alt="img blog" />
-          </div>
-          <h2>Faculty of Science</h2>
-          <p>
-            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-          </p>
-          <a href="">Learn More <img src="https://www.google.com/" alt="" /></a>
-        </div>
-        <div class="card">
-          <div class="prog-container-image">
-            <img src="./assets/images/blog2.jpg.webp" alt="img blog" />
-          </div>
-          <h2>Faculty of Arts</h2>
-          <p>
-            Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh
-            urna
-          </p>
-          <a href="">Learn more <img src="" alt="" /></a>
-        </div>
-      </div>
-      </div>
-    </section> -->
-    <section id="resources" class="resources-section">
-      <div class="resource-container">
         <div class="section-header">
           <h2>PROGRAMS WE OFFER</h2>
           <p>
@@ -132,30 +118,123 @@
             Morbi vitae tincidunt mi, et malesuada massa.
           </p>
         </div>
-        <div class="resources-grid">
-          <div class="resource-item">
-            <img src="./assets/images/blog1.jpg.webp" alt="Resource Image" />
+        <div class="programs-grid">
+          <div class="program-item">
+            <img src="./assets/images/blog1.jpg.webp" alt="Program Image" />
             <h3>Faculty of Science</h3>
             <p>
               Description of the resource. This includes details about the
               contents and how it can be used.
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#">Read More</a>
           </div>
-          <div class="resource-item">
-            <img src="./assets/images/blog2.jpg.webp" alt="Resource Image" />
+          <div class="program-item">
+            <img src="./assets/images/blog2.jpg.webp" alt="Program Image" />
             <h3>Faculty of Arts</h3>
             <p>
               Description of the resource. This includes details about the
               contents and how it can be used.
             </p>
-            <a href="#" class="btn">Read More</a>
+            <a href="#">Read More</a>
           </div>
-          <!-- Add more resource items as needed -->
+        </div>
+      </div>
+    </section>
+    <section class="essential-resources">
+      <div class="essential-container">
+        <div class="essential-text">
+          <h2>Essential Resources</h2>
+          <p>
+            Maecenas felis felis, vulputate sit amet mauris et, semper aliquam
+            ligula. Integer <br />
+            efficitur tellus metus, sed feugiat leo posuere.
+          </p>
+          <div class="essential-cards">
+            <div class="card">
+              <div class="card-content">
+                <h3>First year students</h3>
+                <p>
+                  Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                  Morbi vitae tincidunt mi, et malesuada massa.
+                </p>
+              </div>
+              <div class="card-arrow">
+                <a href="#"
+                  ><img src="./assets/icons/arrow-right.png" alt="Arrow icon"
+                /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>Tuition & fees</h3>
+                <p>
+                  Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                  Morbi vitae tincidunt mi, et malesuada massa.
+                </p>
+              </div>
+              <div class="card-arrow">
+                <a href="#"
+                  ><img src="./assets/icons/arrow-right.png" alt="Arrow icon"
+                /></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>International students</h3>
+                <p>
+                  Integer efficitur tellus metus, sed feugiat leo posuere ac.
+                  Morbi vitae tincidunt mi, et malesuada massa.
+                </p>
+              </div>
+              <div class="card-arrow">
+                <a href="#"
+                  ><img src="./assets/icons/arrow-right.png" alt="Arrow icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="essential-image">
+          <img
+            class="essential-image"
+            src="./assets/images/essentials.jpg"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex-container">
+        <h1>TOP STORIES</h1>
+        <div class="flex-card">
+          <div class="flex-container-image">
+            <img src="./assets/images/class-img1.jpg.webp" alt="img intro" />
+          </div>
+
+          <p>
+            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+          </p>
+        </div>
+        <div class="flex-card">
+          <div class="flex-container-image">
+            <img src="./assets/images/class-img2.jpg.webp" alt="img intro" />
+          </div>
+          <p>Aliquam eget aliquam magna, quis posuere ipsum nibh urna</p>
+        </div>
+        <div class="flex-card">
+          <div class="flex-container-image">
+            <img src="./assets/images/class-img3.jpg.webp" alt="img intro" />
+          </div>
+          <p>
+            Linguistics alumna says recognizing Indigenous Languages Day is
+            crucial to our histories
+          </p>
         </div>
       </div>
     </section>
     <section>Blog goes here</section>
     <section>Contact goes here</section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
