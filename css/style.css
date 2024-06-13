@@ -6,11 +6,10 @@
 html {
   scroll-behavior: smooth;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline;
 }
 
 body {
@@ -19,11 +18,13 @@ body {
   font-weight: 400;
   font-style: normal;
   overflow-x: hidden;
+  margin: auto;
 }
 
 a {
-  text-decoration: none;
+  text-decoration-color: transparent;
 }
+
 h2 {
   font-size: 30px;
   margin-bottom: 30px;
@@ -40,11 +41,6 @@ p {
   font-size: 24px;
   margin-bottom: 30px;
 }
-
-/* .container {
-  max-width: 80%;
-  margin: auto;
-} */
 
 #logo {
   width: 160px;
@@ -82,8 +78,8 @@ nav {
   color: inherit;
 }
 
-.nav-links span:hover {
-  color: brown;
+#nav-links span:hover {
+  color: #007a5c;
   cursor: pointer;
 }
 
@@ -140,6 +136,11 @@ button {
   font-size: 16px;
 }
 
+.menu-button:hover {
+  background-color: #007a5c;
+  color: white;
+}
+
 /* -----------About section------------- */
 #about {
   background-color: #fcf2eb;
@@ -184,21 +185,11 @@ button {
   line-height: 2rem;
 }
 
-/* .card {
-  overflow: hidden;
-  background-color: white;
-  width: 33.33%;
-  height: auto;
-  text-align: left;
-  padding: 20px;
-} */
-
 /* -----------programs offered section------------- */
 */ .programs-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  /* display: flex; */
 }
 
 .programs-section {
@@ -276,21 +267,28 @@ button {
 
 /* -----------essential resource section------------- */
 .essential-resources {
-  padding: 100px;
+  position: relative;
   background-color: #f2fbf9;
-  display: flex;
+  margin-bottom: 50px;
 }
-.essential-container {
+
+.essential-resources .container {
   display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .essential-text {
   /* flex: 1; */
   /* padding-right: 20px; */
-  width: 50%;
+  width: 60%;
+  padding: 10px;
 }
 
-.essential-text h2 {
+.essential-text h2,
+#blog h2,
+#clientele h2,
+#showcase h2 {
   font-family: "Chivo", sans-serif;
   font-weight: bold;
   font-size: 50px;
@@ -307,6 +305,15 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.essential-cards .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d5dddc;
+  padding: 15px;
+}
+.essential-cards .card {
   width: 70%;
 }
 
@@ -323,14 +330,21 @@ button {
 
 .card-arrow {
   flex-shrink: 0;
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 50%;
 }
 
-.card-arrow a img {
-  width: 20px;
-  height: 30px;
+.card-arrow:hover {
+  background-color: #add8e6;
+  cursor: pointer;
 }
+
 .essential-image {
-  width: 90%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40%;
   display: flex;
   justify-content: center;
   /* height: 400px; */
@@ -339,7 +353,7 @@ button {
   /* max-width: 60%; */
   border-radius: 10px;
   object-fit: cover;
-  width: 80%;
+  width: 100%;
   height: 80vh;
 }
 
@@ -359,7 +373,7 @@ button {
 .flex-container img {
   width: 400px;
   height: 250px;
-  border-radius: 15px;
+  /* border-radius: 10px; */
   overflow: hidden;
   transition: transform 0.5s ease;
 }
@@ -381,7 +395,7 @@ button {
   /* Styles to reduce the size of the arrow image */
   width: 18px;
   height: auto;
-  margin: auto 10px 0;
+  margin: auto 20px 0;
 }
 
 .flex-container a {
@@ -399,4 +413,160 @@ button {
   border: 1px solid #dee2e6;
   border-radius: 10px;
   /* background-color: #f2fbf9; */
+}
+
+/* -----------------BLOG------------------ */
+#blog h2 {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#blog .cards {
+  max-width: 90%;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+#blog p {
+  text-align: center;
+}
+
+#blog .blog-card {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#blog img {
+  width: 100%;
+}
+
+/* --------------CLIENTELE SECTION---------------- */
+#clientele .clientele-container {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------------SHOWCASE------------------------------ */
+#showcase {
+  display: flex;
+  background-color: #fef6f0;
+}
+
+.showcase-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase-image img {
+  width: 70%;
+  height: auto;
+}
+.showcase-text {
+  background-color: #007a5c;
+  width: 50%;
+  padding: 40px;
+  padding-bottom: 60px;
+}
+.showcase-text h2 {
+  color: #fff !important;
+}
+.showcase-text p {
+  color: #c3d6cb;
+}
+.showcase-text a {
+  color: #fff !important;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.clientele-slideshow {
+  width: 80%;
+  margin: auto;
+}
+.clientele-slideshow div {
+  text-align: center;
+  background: #fff;
+  /* border: 1px solid #ddd; */
+  margin: 50px;
+}
+
+/* Social media & footer section */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-widget {
+  width: 25%;
+  margin-bottom: 30px;
+}
+.footer .footer-widget h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.footer .footer-widget h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #fdb913;
+}
+.footer .footer-widget p {
+  margin-bottom: 20px;
+  color: #bbb;
+}
+.footer .footer-widget ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-widget ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-widget ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+.footer .footer-widget ul li a:hover {
+  color: #fdb913;
+}
+.footer .footer-social {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.footer .footer-social a {
+  color: #bbb;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.footer .footer-social a:hover {
+  color: #fdb913;
+}
+.footer .footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+}
+.footer .footer-bottom p {
+  margin: 0;
+  color: #bbb;
 }
