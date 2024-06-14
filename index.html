@@ -107,7 +107,9 @@
     <section id="about">
       <div class="container">
         <div class="about-image">
-          <img src="./assets/images/About2.jpg" alt="about" />
+          <div class="about-img">
+            <img src="./assets/images/About2.jpg" alt="about" />
+          </div>
         </div>
         <div class="about-text">
           <h2>A Comprehensive Teaching Approach</h2>
@@ -121,7 +123,7 @@
             malesuada massa.
           </p>
 
-          <a href="https://www.google.com/">Learn More <img src="" alt="" /></a>
+          <a href="https://www.google.com/">Learn More<img src="" alt="" /></a>
         </div>
       </div>
     </section>
@@ -137,7 +139,9 @@
         </div>
         <div class="programs-grid">
           <div class="program-item">
-            <img src="./assets/images/blog1.jpg.webp" alt="Program Image" />
+            <div class="program-image">
+              <img src="./assets/images/blog1.jpg.webp" alt="Program Image" />
+            </div>
             <h3>Faculty of Science</h3>
             <p>
               Description of the resource. This includes details about the
@@ -145,8 +149,11 @@
             </p>
             <a href="#">Read More</a>
           </div>
+
           <div class="program-item">
-            <img src="./assets/images/blog2.jpg.webp" alt="Program Image" />
+            <div class="program-image">
+              <img src="./assets/images/blog2.jpg.webp" alt="Program Image" />
+            </div>
             <h3>Faculty of Arts</h3>
             <p>
               Description of the resource. This includes details about the
@@ -178,7 +185,7 @@
                 </div>
               </div>
               <div class="card-arrow">
-                <a href="#"> <i class="fa-solid fa-angle-right large"></i> </a>
+                <a href="#"> <i class="fa-solid fa-angle-right"></i> </a>
               </div>
             </div>
             <div class="card-container">
@@ -212,7 +219,9 @@
           </div>
         </div>
         <div class="essential-image">
-          <img src="./assets/images/essentials.jpg" alt="Image" />
+          <div class="essential-img">
+            <img src="./assets/images/essentials.jpg" alt="Image" />
+          </div>
         </div>
       </div>
     </section>
@@ -264,16 +273,16 @@
         </p>
         <div class="clientele-slideshow">
           <div>
-            <img src="./assets/logo/gnap.png" alt="" />
+            <img src="./assets/logo/brand1.png.webp" alt="" />
           </div>
           <div>
-            <img src="./assets/logo/crawford.jpeg" alt="" />
+            <img src="./assets/logo/brand2.png.webp" alt="" />
           </div>
           <div>
-            <img src="./assets/logo/images.jpeg" alt="" />
+            <img src="./assets/logo/brand3.png.webp" alt="" />
           </div>
           <div>
-            <img src="./assets/logo/school of life.jpeg" alt="" />
+            <img src="./assets/logo/brand4.png.webp" alt="" />
           </div>
         </div>
       </div>
@@ -281,7 +290,9 @@
 
     <section id="showcase">
       <div class="showcase-image">
-        <img src="./assets/images/ben.jpg" alt="showcase" />
+        <div class="showcase-img">
+          <img src="./assets/images/ben.jpg" alt="showcase" />
+        </div>
       </div>
       <div class="showcase-text">
         <h2>TRUSTED BY OVER <br />6000+ STUDENTS</h2>
@@ -323,7 +334,7 @@
           <div class="footer-widget">
             <h4>Contact Info</h4>
             <p>GA-303-0722 7 mboumu Street, Accra, Ghana</p>
-            <p>Email: info@westfiedsmontessorischool.com</p>
+            <p>Email: info@westfiedsmontischool.com</p>
             <p>Phone: +233 243 999 631</p>
           </div>
           <div class="footer-widget">
@@ -353,10 +364,11 @@
         $(".clientele-slideshow").slick({
           dots: false, // Display dots for navigation
           infinite: true, // Infinite looping
-          speed: 300, // Transition speed
+          speed: 800, // Transition speed
           slidesToShow: 3, // Number of slides to show
           slidesToScroll: 1, // Number of slides to scroll
           autoplay: true,
+          autoplaySpeed: 3000,
         });
       });
     </script>

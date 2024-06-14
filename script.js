@@ -30,14 +30,18 @@ const cardContainers = document.querySelectorAll(".card-container");
 // Iterate over each element and add event listeners for mouseover and mouseout
 cardContainers.forEach((cardContainer) => {
   cardContainer.addEventListener("mouseover", () => {
-    cardContainer.style.backgroundColor = "#add8e6"; // change to the desired color on hover
+    cardContainer.style.backgroundColor = "#d6ffff"; // change to the desired color on hover
     const h3 = cardContainer.querySelector("h3");
     if (h3) {
-      h3.style.color = "green"; // change to the desired text color on hover
+      h3.style.color = "#007A5C"; // change to the desired text color on hover
     }
     const arrow = cardContainer.querySelector(".card-arrow");
     if (arrow) {
-      arrow.style.backgroundColor = "green";
+      arrow.style.backgroundColor = "#007A5C";
+    }
+    const arrowIcon = cardContainer.querySelector("i");
+    if (arrowIcon) {
+      arrowIcon.style.color = "#fff";
     }
   });
 
@@ -51,6 +55,10 @@ cardContainers.forEach((cardContainer) => {
     if (arrow) {
       arrow.style.backgroundColor = "#fff";
     }
+    const arrowIcon = cardContainer.querySelector("i");
+    if (arrowIcon) {
+      arrowIcon.style.color = "#000";
+    }
   });
 });
 
@@ -58,7 +66,7 @@ $(document).ready(function () {
   $(".clientele-slideshow").slick({
     dots: true, // Display dots for navigation
     infinite: true, // Infinite looping
-    speed: 300, // Transition speed
+    speed: 800, // Transition speed
     slidesToShow: 1, // Number of slides to show
     slidesToScroll: 1, // Number of slides to scroll
   });
